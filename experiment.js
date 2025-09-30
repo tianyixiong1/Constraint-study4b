@@ -49,13 +49,10 @@ const sessionId = jsPsych.data.getURLVariable('SESSION_ID');
 
 const filename = `${participantId}_${studyId}_${sessionId}.csv`;
 
-let genderCondition = jsPsych.randomization.sampleWithoutReplacement(['male', 'female'], 1)[0];
-
 jsPsych.data.addProperties({
   participantId: participantId,
   studyId: studyId,
   sessionId: sessionId,
-  genderCondition: genderCondition
 });
 
 // Enter fullscreen
